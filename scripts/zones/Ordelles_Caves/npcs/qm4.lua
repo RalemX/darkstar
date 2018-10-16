@@ -10,7 +10,7 @@ require("scripts/globals/npc_util");
 
 function onTrade(player,npc,trade)
     -- DARK PUPPET: Darksteel Ingot
-    if ( player:getVar("darkPuppetCS") >= 2 and not player:hasItem(16681) and npcUtil.tradeHas(trade, 654) ) then
+    if ( player:getVar("darkPuppetCS") >= 2 and not player:hasItem(16681) and npcUtil.tradeHas(trade, 645) ) then
         player:confirmTrade();
         player:messageSpecial(ID.text.GERWITZS_AXE_DIALOG);
         SpawnMob(ID.mob.DARK_PUPPET_OFFSET):updateClaim(player);
